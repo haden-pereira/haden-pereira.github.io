@@ -140,6 +140,37 @@ Never pay the ransom - it funds criminal activity and doesn't guarantee recovery
     tags: ['ransomware', 'defense', 'backup'],
     readTime: 6,
   },
+  {
+    id: '4',
+    title: 'Reduce Your Digital Footprint: Every Click Counts',
+    slug: 'reducing-digital-footprint',
+    excerpt: 'Every online action leaves a trace. Learn how to reduce your digital footprint and protect yourself from fraud.',
+    content: `# Reduce Your Digital Footprint: Every Click Counts
+
+In today's hyper-connected world, every single action you take online leaves a trace—a digital breadcrumb that can be exploited. From the websites you visit to the apps you use, your digital footprint is growing larger by the day, and with it, your vulnerability to fraud.
+
+Let's face it: the internet is not as safe as we like to believe. Every "free" service you use, every social media post you make, and every online purchase you complete is another piece of data that can be used against you. Cybercriminals are lurking, waiting for the right opportunity to exploit your information. And the more you share, the easier you make it for them.
+
+## Simple Steps to Protect Yourself
+
+1. **Use Multi-Factor Authentication (MFA):** Always enable MFA on your accounts. It adds an extra layer of security, making it harder for attackers to gain access.
+2. **Adopt a Password Manager:** Stop reusing passwords! A password manager can generate and store strong, unique passwords for all your accounts.
+3. **Delay Sharing on Social Media:** Love posting vacation pictures? Wait until you're back home to share them. Real-time updates can alert criminals to your absence.
+4. **Limit Data Sharing:** Think twice before signing up for new apps or services. Only provide the minimum information required.
+5. **Use Privacy-Focused Tools:** Switch to browsers, search engines, and email providers that prioritize your privacy.
+
+## Why It Matters
+
+Think about it: do you really need to post your vacation photos in real-time, letting the world know you're not home? Do you need to sign up for yet another app that asks for your personal details? Every unnecessary action you take online increases your exposure and, consequently, your chances of becoming a victim of fraud.
+
+It's time to take control. Start by questioning every online activity. Do you really need to share that information? Can you minimize the data you provide? Use privacy-focused tools, limit your social media presence, and think twice before clicking "Accept" on those endless terms and conditions.
+
+Remember, the less you share, the less there is to exploit. Reducing your digital footprint isn't just a choice—it's a necessity in the fight against online fraud. Take action now, because every click counts.`,
+    author: 'Haden Pereira',
+    date: '2026-01-24',
+    tags: ['cybersecurity', 'digital footprint', 'online safety', 'fraud prevention'],
+    readTime: 5,
+  },
 ];
 
 export function getPosts(): BlogPost[] {

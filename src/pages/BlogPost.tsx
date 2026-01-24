@@ -15,16 +15,6 @@ export default function BlogPost() {
   const { toast } = useToast();
   const post = slug ? getPost(slug) : undefined;
 
-  const handleDelete = () => {
-    if (post && confirm('Are you sure you want to delete this post?')) {
-      deletePost(post.id);
-      toast({
-        title: 'Post deleted',
-        description: 'The blog post has been removed.',
-      });
-      navigate('/blog');
-    }
-  };
 
   if (!post) {
     return (
@@ -113,14 +103,6 @@ export default function BlogPost() {
                 <ArrowLeft className="mr-2 h-4 w-4" />
                 Back to Blog
               </Link>
-            </Button>
-            <Button
-              variant="ghost"
-              className="text-destructive hover:text-destructive hover:bg-destructive/10"
-              onClick={handleDelete}
-            >
-              <Trash2 className="mr-2 h-4 w-4" />
-              Delete Post
             </Button>
           </div>
         </article>
