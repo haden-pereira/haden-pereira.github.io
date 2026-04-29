@@ -72,3 +72,22 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+
+
+
+
+1. git checkout workflow
+2. blogstore.ts - 
+Write a blog in markdown format on the topic: [Insert Topic Here]. The blog should be strong, engaging, and informative. Use the following details to structure the blog:
+
+1. *Title*: [Insert Title Here]
+2. *Author*: Haden Pereira
+3. *Date*: Use the current date (e.g., January 24, 2026).
+4. *Tags*: Auto-generate relevant tags based on the topic.
+5. *Read Time*: Estimate the read time based on the content length.
+6. *Excerpt*: Write a short summary of the blog (1-2 sentences) that captures the essence of the content.
+7. *Content*: Write the blog content in markdown format. Use headings, subheadings, bullet points, and code blocks (if applicable). Include actionable steps, examples, or references to make the blog practical and engaging.
+
+Ensure the blog is well-structured and formatted for readability. If a reference link is provided, incorporate it into the content naturally.
+
+run npm run build then npm run deploy
