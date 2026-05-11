@@ -77,6 +77,8 @@ Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/c
 
 
 1. git checkout workflow
+
+
 2. blogstore.ts - 
 Write a blog in markdown format on the topic: [Insert Topic Here]. The blog should be strong, engaging, and informative. Use the following details to structure the blog:
 
@@ -88,6 +90,6 @@ Write a blog in markdown format on the topic: [Insert Topic Here]. The blog shou
 6. *Excerpt*: Write a short summary of the blog (1-2 sentences) that captures the essence of the content.
 7. *Content*: Write the blog content in markdown format. Use headings, subheadings, bullet points, and code blocks (if applicable). Include actionable steps, examples, or references to make the blog practical and engaging.
 
-Ensure the blog is well-structured and formatted for readability. If a reference link is provided, incorporate it into the content naturally.
+Ensure the blog is well-structured and formatted for readability. If a reference link is provided, incorporate itto the content naturally.
 
-run npm run build then npm run deploy
+3.run npm run build then npm run deploy

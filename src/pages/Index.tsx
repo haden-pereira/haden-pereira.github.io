@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, Shield, Code, Lock } from 'lucide-react';
+import { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
@@ -9,7 +10,7 @@ import { ThreatMap } from '@/components/ThreatMap';
 import { ThreatChart } from '@/components/ThreatChart';
 import { TerminalAnimation } from '@/components/TerminalAnimation';
 import { BlogCard } from '@/components/BlogCard';
-import { getPosts } from '@/lib/blogStore';
+import { getPosts, BlogPost } from '@/lib/blogStore';
 
 const features = [
   {
@@ -30,7 +31,13 @@ const features = [
 ];
 
 export default function Index() {
-  const posts = getPosts().slice(0, 3);
+  const [posts, setPosts] = useState<BlogPost[]>([]);
+
+  useEffect(() => {
+    getPosts().then((allPosts) => {
+      setPosts(allPosts.slice(0, 3));
+    });
+  }, []);
 
   return (
     <div className="min-h-screen bg-background dark">

@@ -1,16 +1,22 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Search } from 'lucide-react';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { BlogCard } from '@/components/BlogCard';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
-import { getPosts } from '@/lib/blogStore';
+import { getPosts, BlogPost } from '@/lib/blogStore';
 
 export default function Blog() {
-  const posts = getPosts();
+  const [posts, setPosts] = useState<BlogPost[]>([]);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
+
+  useEffect(() => {
+    getPosts().then((allPosts) => {
+      setPosts(allPosts);
+    });
+  }, []);
 
   // Get unique tags
   const allTags = Array.from(new Set(posts.flatMap((post) => post.tags)));

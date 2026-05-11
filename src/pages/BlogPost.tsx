@@ -2,19 +2,43 @@ import { useParams, Link, useNavigate } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { ArrowLeft, Calendar, Clock, User, Trash2 } from 'lucide-react';
+import { useState, useEffect } from 'react';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { getPost, deletePost } from '@/lib/blogStore';
+import { getPost, deletePost, BlogPost } from '@/lib/blogStore';
 import { useToast } from '@/hooks/use-toast';
 
-export default function BlogPost() {
+export default function BlogPostPage() {
   const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
   const { toast } = useToast();
-  const post = slug ? getPost(slug) : undefined;
+  const [post, setPost] = useState<BlogPost | null>(null);
+  const [loading, setLoading] = useState(true);
 
+  useEffect(() => {
+    if (slug) {
+      getPost(slug).then((foundPost) => {
+        setPost(foundPost ?? null);
+        setLoading(false);
+      });
+    }
+  }, [slug]);
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-background dark">
+        <Navbar />
+        <main className="pt-24 pb-16">
+          <div className="container mx-auto px-4 text-center">
+            <p className="text-muted-foreground">Loading...</p>
+          </div>
+        </main>
+        <Footer />
+      </div>
+    );
+  }
 
   if (!post) {
     return (
