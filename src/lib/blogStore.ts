@@ -88,6 +88,16 @@ const blogMetadata: BlogPostMetadata[] = [
     tags: ['cybersecurity', 'phishing', 'psychology', 'social engineering', 'threat awareness', 'email security'],
     readTime: 7,
   },
+  {
+    id: '8',
+    title: 'AI Hallucinations Are Creating Real Security Risks',
+    slug: 'ai-hallucinations-security-risks',
+    excerpt: 'Confident but false outputs from AI models—hallucinations—are creating tangible security risks; simple verification and gating practices reduce that risk quickly.',
+    author: 'Haden Pereira',
+    date: '2026-05-16',
+    tags: ['AI-security', 'hallucinations', 'model-risk', 'defenses'],
+    readTime: 5,
+  },
 ];
 
 // Helper function to load blog content from markdown files
