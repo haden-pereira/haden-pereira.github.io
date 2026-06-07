@@ -98,6 +98,16 @@ const blogMetadata: BlogPostMetadata[] = [
     tags: ['AI-security', 'hallucinations', 'model-risk', 'defenses'],
     readTime: 5,
   },
+  {
+    id: '9',
+    title: "HTTP/2 'Bomb' Vulnerability Allows Remote DoS",
+    slug: 'http2-bomb-vulnerability',
+    excerpt: 'A clear, practical explanation of an HTTP/2 "bomb" that can cause remote denial-of-service, how to spot it, and simple steps to reduce risk.',
+    author: 'Haden Pereira',
+    date: '2026-06-07',
+    tags: ['HTTP/2', 'denial-of-service', 'cybersecurity', 'mitigation'],
+    readTime: 4,
+  },
 ];
 
 // Helper function to load blog content from markdown files
