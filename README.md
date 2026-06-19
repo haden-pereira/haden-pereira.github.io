@@ -78,7 +78,6 @@ Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/c
 
 1. git checkout workflow
 
-
 2. blogstore.ts - 
 Write a blog in markdown format on the topic: [Insert Topic Here]. The blog should be strong, engaging, and informative. Use the following details to structure the blog:
 

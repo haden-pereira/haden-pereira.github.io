@@ -108,6 +108,16 @@ const blogMetadata: BlogPostMetadata[] = [
     tags: ['HTTP/2', 'denial-of-service', 'cybersecurity', 'mitigation'],
     readTime: 4,
   },
+  {
+    id: '10',
+    title: 'AI vs Hackers: How Artificial Intelligence Is Changing Cybersecurity',
+    slug: 'ai-vs-hackers-how-artificial-intelligence-is-changing-cybersecurity',
+    excerpt: 'Artificial intelligence is accelerating both cyber attacks and defenses. Learn where AI helps attackers, where it strengthens defenders, and which controls matter most right now.',
+    author: 'Haden Pereira',
+    date: '2026-06-19',
+    tags: ['cybersecurity', 'artificial intelligence', 'phishing', 'malware', 'log analysis', 'threat intelligence', 'detection'],
+    readTime: 8,
+  },
 ];
 
 // Helper function to load blog content from markdown files
