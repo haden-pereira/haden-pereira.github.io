@@ -118,6 +118,16 @@ const blogMetadata: BlogPostMetadata[] = [
     tags: ['cybersecurity', 'artificial intelligence', 'phishing', 'malware', 'log analysis', 'threat intelligence', 'detection'],
     readTime: 8,
   },
+  {
+    id: '11',
+    title: 'Incident Response & Log Analysis Fundamentals',
+    slug: 'incident-response-log-analysis-fundamentals',
+    excerpt: 'A compact, practical workflow for triage, investigation, and lessons learned using logs and lightweight tools.',
+    author: 'Haden Pereira',
+    date: '2026-07-16',
+    tags: ['incident-response', 'log-analysis', 'forensics', 'detection'],
+    readTime: 5,
+  },
 ];
 
 // Helper function to load blog content from markdown files

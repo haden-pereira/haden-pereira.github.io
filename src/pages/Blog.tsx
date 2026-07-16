@@ -14,6 +14,11 @@ export default function Blog() {
 
   useEffect(() => {
     getPosts().then((allPosts) => {
+      // DEBUG: log posts loaded from getPosts()
+      // (temporary) helps confirm public/*.md files are being read
+      // Remove this after verification
+      // eslint-disable-next-line no-console
+      console.log('DEBUG: loaded posts', allPosts.map(p => p.id));
       setPosts(allPosts);
     });
   }, []);
