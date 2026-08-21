@@ -128,6 +128,16 @@ const blogMetadata: BlogPostMetadata[] = [
     tags: ['incident-response', 'log-analysis', 'forensics', 'detection'],
     readTime: 5,
   },
+  {
+    id: '12',
+    title: 'Why Your Browser Is the New Attack Surface',
+    slug: 'why-your-browser-is-the-new-attack-surface',
+    excerpt: 'Most organizations focus on endpoints and networks, but the browser is often the real weak point. This article explains why browser-based attacks are growing and how to reduce risk without hurting productivity.',
+    author: 'Haden Pereira',
+    date: '2026-08-21',
+    tags: ['cybersecurity', 'browser-security', 'web-security', 'browser-isolation', 'zero-trust', 'saas-security'],
+    readTime: 6,
+  },
 ];
 
 // Helper function to load blog content from markdown files
